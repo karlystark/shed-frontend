@@ -1,0 +1,37 @@
+nav {
+  display: flex;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.Nav-logo {
+  height: 20vh;
+  width: 20vw;
+}
+
+.Nav-logo:hover {
+  fill: rgb(42, 176, 106);
+}
+
+.Nav-title p {
+  font-size: 5vh;
+}
+
+.nav-link:hover {
+color:rgb(249, 64, 3);
+}
+
+.nav-link {
+  color: rgb(19, 19, 19);
+  font-size: 1.3rem;
+}
+
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+@media (max-width: 768px){
+  nav div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+}
