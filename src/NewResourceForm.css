@@ -1,0 +1,55 @@
+.NewResourceForm form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 15px;
+  padding: 80px;
+  margin: 50px 120px;
+  background-color: rgb(31, 31, 32);
+  color: rgb(247, 234, 221);
+
+}
+
+.NewResourceForm label {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.NewResourceForm-input {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.NewResourceForm-input label {
+  margin-right: 2rem;
+}
+
+.NewResourceForm-btn {
+  color: rgb(247, 234, 221);
+  border-color: rgb(247, 234, 221);
+  margin: 20px;
+}
+
+.NewResourceForm-btn:hover{
+  background-color: rgb(247, 234, 221);
+  border-color: rgb(247, 234, 221);
+  color: black;
+}
+
+.NewResourceForm img {
+  max-height: 50%;
+  position: absolute;
+  z-index: 200;
+}
+
+.NewResourceForm-leaf {
+  left: 0;
+  transform: rotate(-15deg);
+}
+
+.NewResourceForm-orangeshape {
+  right: 0;
+  bottom: 0;
+}

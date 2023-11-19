@@ -10,6 +10,7 @@ function App() {
   {
     id: 1,
     user: "karlystark",
+    user_img: "ksnpr.JPG",
     title: "hand saw",
     description: "7 inch corona foldable hand saw w safety latch.",
     image: "corona.jpg",
@@ -18,6 +19,7 @@ function App() {
   {
     id: 2,
     user: "karlystark",
+    user_img: "ksnpr.JPG",
     title: "focusrite scarlett 2i2 interface",
     description: "a music production interface with two inputs, for all your recording needs.",
     image: "scarlett.jpeg",
@@ -26,6 +28,7 @@ function App() {
   {
     id: 3,
     user: "karlystark",
+    user_img: "ksnpr.jpg",
     title: "spice cake slices",
     description: "I made a cake! please eat some! it's spice cake with mascarpone whipped cream frosting and raspberry jam.",
     image: "cake.jpeg",
@@ -34,6 +37,7 @@ function App() {
   {
     id: 4,
     user: "karlystark",
+    user_img: "ksnpr.jpg",
     title: "pet care",
     description: "I can feed your cat or hang with your dog any time you're away! my job is basically cats!",
     image: "darla.jpeg",
@@ -42,6 +46,7 @@ function App() {
   {
     id: 5,
     user: "karlystark",
+    user_img: "ksnpr.jpg",
     title: "REI Passage 2 tent",
     description: "A two-person REI Passage 2 tent.",
     image: "passage2.jpeg",
@@ -50,6 +55,7 @@ function App() {
   {
     id: 6,
     user: "karlystark",
+    user_img: "ksnpr.jpg",
     title: "wooden spoons",
     description: "I whittle so many of these, have some!",
     image: "spoons.jpeg",
@@ -58,13 +64,16 @@ function App() {
 
  ]
 
+ function handleAddResource(data){
+  console.log("wow added!");
+ }
 
 
   return (
     <div className="App">
       <BrowserRouter>
       <Nav />
-      <RoutesList resources={resources}/>
+      <RoutesList resources={resources} handleAddResource={handleAddResource}/>
       </BrowserRouter>
     </div>
   );

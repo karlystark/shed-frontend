@@ -1,0 +1,40 @@
+
+
+.UserProfile-banner {
+  background-color:rgb(28, 79, 190);
+  display: flex;
+  width: 50%;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  border-radius: 15px;
+  margin-left: 2rem;
+}
+
+.UserProfile-banner img {
+  border-radius: 50%;
+  height: 15rem;
+  padding: 2rem;
+}
+
+.UserProfile-banner h1 {
+  align-self: center;
+  font-weight: 600;
+  color: rgb(247, 234, 221);
+}
+
+.UserProfile-resources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.add-resource-btn {
+  color: rgb(247, 234, 221);
+  border-color: rgb(247, 234, 221);
+  margin: 20px;
+}
+
+.add-resource-btn:hover{
+  background-color: rgb(247, 234, 221);
+  border-color: rgb(247, 234, 221);
+}
