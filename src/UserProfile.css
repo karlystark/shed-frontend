@@ -1,5 +1,4 @@
 
-
 .UserProfile-banner {
   background-color:rgb(28, 79, 190);
   display: flex;
@@ -12,20 +11,16 @@
 
 .UserProfile-banner img {
   border-radius: 50%;
-  height: 15rem;
-  padding: 2rem;
+  max-height: auto;
+  max-width: 20rem;
+  padding: 1rem;
+  align-self: center;
 }
 
 .UserProfile-banner h1 {
   align-self: center;
   font-weight: 600;
   color: rgb(247, 234, 221);
-}
-
-.UserProfile-resources {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .add-resource-btn {
@@ -38,3 +33,11 @@
   background-color: rgb(247, 234, 221);
   border-color: rgb(247, 234, 221);
 }
+
+.UserProfile-resources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
