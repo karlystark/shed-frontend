@@ -1,37 +1,48 @@
+/************** Resource Card *****************/
 .ResourceCard {
   max-width: 30%;
   max-height: 500px;
-  border-radius: 15px;
-  background-color: rgb(255, 252, 250);
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-  padding: 1.25rem;
-  position: relative;
-  transition: 0.15s ease-in;
+  border-radius: 15px;
   border: none;
+  background-color: rgb(255, 252, 250);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.15s ease-in;
+  padding: 1rem;
   margin-bottom: 40px;
 }
 
 .ResourceCard:hover {
-    box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.1);
-    transform: translatey(-5px);
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.1);
+  transform: translatey(-5px);
 }
 
 .ResourceCard p {
   font-size: 1rem;
-  text-align: left;
+  text-align: start;
+  word-wrap: break-word;
 }
 
+/************** Resource Card Body (Parent) *****************/
 .ResourceCard-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
   margin-top: 1rem;
 }
 
-.ResourceCard-header h2{
-  font-size: 1.4rem;
-  font-weight: 600;
+.card-img-top {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 40%;
 }
+
+/************** Resource Card Header (Title, quantity) *****************/
 
 .ResourceCard-header {
   display: flex;
@@ -39,45 +50,46 @@
   align-items: flex-start;
 }
 
-.card-img-top {
-  object-fit: cover;
-  /* transition: all 0.25s linear; */
-  border-radius: 10px;
-  width: 100%;
-  height: 50%;
+.ResourceCard-header h2{
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: start;
 }
 
-.card-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 
-.btn {
-  margin-top: auto;
-  max-width: 60%;
-  max-height: 20%;
-  align-self: center;
-  border-width: 2px;
+/************** Resource Card Footer (User ID) *****************/
+
+.ResourceCard-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .ResourceCard-footer img {
   object-fit: cover;
   border-radius: 50%;
   max-width: 100px;
-  max-height: 50%;
-  align-self: flex-start;
+  height: 20%;
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  border: 5px solid transparent;
+}
+
+.ResourceCard-footer img:hover {
+  transition: .3s ease-in-out;
+  border: 5px solid orangered;
 }
 
 .ResourceCard-footer p {
-  align-self: center;
-  margin-left: 5%;
   font-size: .8rem;
+  position: absolute;
+  bottom: 0;
+  left: 20;
 }
 
-.ResourceCard-footer {
+.footer-link {
   display: flex;
-  margin-top: 1rem;
 }

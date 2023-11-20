@@ -12,6 +12,7 @@ function NewResourceForm({ resources, handleAddResource }) {
     alt: "",
     quantity: ""
   };
+
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState(initialState);

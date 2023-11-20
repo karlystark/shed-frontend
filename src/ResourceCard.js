@@ -15,7 +15,8 @@ function ResourceCard({ resource }) {
         <p className="card-text">{resource.description}</p>
         </div>
         <div className="ResourceCard-footer">
-          <Link to={`/users/${resource.user}`}>
+          <p>found in {resource.user}'s shed</p>
+          <Link to={`/users/${resource.user}`} className="footer-link">
             <img src="/ksnpr.jpg" alt={resource.user} />
           </Link>
         </div>
