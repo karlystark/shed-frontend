@@ -11,7 +11,7 @@ function RoutesList({resources, handleAddResource}) {
 
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home resources={resources}/>} />
       <Route path="/about" element={<About />} />
       <Route path="/users/karlystark" element={<UserProfile resources={resources} />} />
       <Route path="/resources" element={<ResourceList resources={resources}/>} />

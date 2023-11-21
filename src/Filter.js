@@ -12,7 +12,8 @@ function Filter() {
     "foods",
     "services",
     "auto/bike",
-    "outdoors"
+    "outdoors",
+    "tech",
   ];
 
   const friends = [

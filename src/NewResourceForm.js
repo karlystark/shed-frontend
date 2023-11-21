@@ -4,6 +4,15 @@ import { useNavigate } from "react-router-dom";
 import Alert from "./Alert";
 
 
+const categories = [
+  "Tools",
+  "Foods",
+  "Services",
+  "Outdoors",
+  "Tech",
+  "Auto/Bike",
+]
+
 function NewResourceForm({ resources, handleAddResource }) {
   const initialState = {
     title: "",
@@ -62,6 +71,17 @@ function NewResourceForm({ resources, handleAddResource }) {
             id="description"
             placeholder="champion 3550W weekender portable generator"
             onChange={handleChange} />
+        </div>
+
+        <div className="NewResourceForm-input">
+          <label htmlFor="category" className="form-label">Resource Category</label>
+          <select className="NewResourceForm-placeholder form-control"
+            name="category"
+            id="category"
+            onChange={handleChange}>
+            <option value="" disabled selected>what type of resource is it?</option>
+            {categories.map(category => <option key={category} value={category}>{category}</option>)}
+            </select>
         </div>
 
         <div className="NewResourceForm-input">
