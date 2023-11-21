@@ -1,0 +1,17 @@
+.ColorPicker-container {
+  background-color: rgb(246, 242, 242);
+  border-radius: 15px;
+  padding: 3%;
+}
+
+.ColorPicker label {
+  text-align: left;
+}
+
+.ColorPicker-selected {
+  border: 4px solid rgb(242, 255, 0);
+}
+
+.ColorPicker-button {
+  border: 4px solid transparent;
+}

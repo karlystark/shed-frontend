@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SignupForm.css";
 import Alert from "./Alert.js";
+import { ReactComponent as Logo } from './shed.svg';
+import ColorPicker from "./ColorPicker.js";
 
 const initialState = {
   username: "",
@@ -16,6 +18,10 @@ function SignupForm({ handleAddUser }) {
 
   const navigate = useNavigate();
 
+
+  function handleColorSelect(color){
+    setFormData(fData => ({...formData, color}));
+  }
 
   function handleChange(evt) {
     const { name, value } = evt.target;
@@ -39,7 +45,11 @@ function SignupForm({ handleAddUser }) {
   return (
     <div className="SignupForm">
       <h1>Join the Shed <i class="bi bi-emoji-smile-upside-down"></i></h1>
+      <Logo className="SignupForm-logo1" />
+      <Logo className="SignupForm-logo2" />
+      <Logo className="SignupForm-logo3" />
       <form onSubmit={handleSubmit}>
+
         <div className="SignupForm-input">
           <label htmlFor="username" className="form-label">Username</label>
           <input className="form-control"
@@ -65,14 +75,13 @@ function SignupForm({ handleAddUser }) {
             onChange={handleChange} />
         </div>
         <div className="SignupForm-input">
-          <label htmlFor="color">Set Background Color</label>
-          <input type="color" onChange={handleChange} />
+         <ColorPicker doColorSelect={handleColorSelect}/>
         </div>
 
-        {
+        {/* {
           errorMessages.length !== 0 &&
           <Alert errors={errorMessages} />
-        }
+        } */}
 
         <button className="SignupForm-btn btn btn-outline-dark"> Join the shed! </button>
       </form >
