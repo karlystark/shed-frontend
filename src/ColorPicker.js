@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function ColorPicker({doColorSelect}){
 
-  const colorOptions = ["#1c4fbe", "#f94003", "#2ab06a", "#100f0d", "#771c39"];
+  const colorOptions = ["#1c4fbe", "#f94003", "#2ab06a", "#1f1f20", "#771c39"];
 
   const [selectedColor, setSelectedColor] = useState("");
 
