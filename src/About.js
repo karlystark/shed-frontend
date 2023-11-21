@@ -10,7 +10,7 @@ return (
     </div>
     <div className="About-description">
       <img src="orangeshape.png" alt=""/>
-    <p> we all have resources that we don't use every day - power tools,
+    <p> we all have resources that are best shared - power tools,
       camping gear, extra sourdough starter - and when we connect, we have
       everything we need.
     </p>

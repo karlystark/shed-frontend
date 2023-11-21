@@ -12,3 +12,16 @@
   justify-content: center;
   margin-top: 5%;
 }
+
+
+@media (max-width: 760px) {
+
+  .Home-new h1 {
+    font-size: 2rem;
+  }
+
+  .Home-new p {
+    font-size: 1rem;
+  }
+
+}

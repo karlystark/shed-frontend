@@ -38,7 +38,7 @@
 
 .About-description p {
   align-self: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 u {
@@ -145,7 +145,7 @@ u {
   }
 
   .About img {
-    max-height: 40vh;
+    max-height: 35vh;
     max-width: 40vw;
   }
 

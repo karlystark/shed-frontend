@@ -71,3 +71,217 @@
   margin-top: 36%;
   fill: rgb(247, 234, 221);
 }
+
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+
+@media (max-width: 280px) {
+
+  .SignupForm-logo1,
+  .SignupForm-logo2,
+  .SignupForm-logo3 {
+    display: none;
+  }
+
+  .SignupForm h1 {
+    font-size: 1.5rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .SignupForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .SignupForm-input {
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .SignupForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .SignupForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+}
+
+
+@media (min-width: 280px) and (max-width: 320px) {
+  .SignupForm-logo1,
+  .SignupForm-logo2,
+  .SignupForm-logo3 {
+    display: none;
+  }
+
+  .SignupForm h1 {
+    font-size: 1.5rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .SignupForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .SignupForm-input {
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .SignupForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .SignupForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .SignupForm-logo1,
+  .SignupForm-logo2,
+  .SignupForm-logo3 {
+    display: none;
+  }
+
+  .SignupForm h1 {
+    font-size: 2rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .SignupForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .SignupForm-input {
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .SignupForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .SignupForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+  .SignupForm-logo1,
+  .SignupForm-logo2,
+  .SignupForm-logo3 {
+    display: none;
+  }
+
+  .SignupForm h1 {
+    font-size: 2.5rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .SignupForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .SignupForm-input {
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .SignupForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .SignupForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .SignupForm-logo1,
+  .SignupForm-logo2,
+  .SignupForm-logo3 {
+    display: none;
+  }
+
+  .SignupForm h1 {
+    font-size: 3.5rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .SignupForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .SignupForm-input {
+    max-width: 70%;
+    width: 100%;
+    text-align: left;
+    margin-left: 15%;
+  }
+
+  .SignupForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .SignupForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+}

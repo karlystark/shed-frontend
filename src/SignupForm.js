@@ -75,7 +75,7 @@ function SignupForm({ handleAddUser }) {
             onChange={handleChange} />
         </div>
         <div className="SignupForm-input">
-         <ColorPicker doColorSelect={handleColorSelect}/>
+         <ColorPicker doColorSelect={handleColorSelect} className="SignupForm-color"/>
         </div>
 
         {/* {
