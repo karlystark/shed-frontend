@@ -1,7 +1,7 @@
 import "./Filter.css";
 import { useState } from "react";
 
-function Filter() {
+function Filter({ filterResources, filterSheds, resetFilter }) {
   const [typeIsClicked, setTypeIsClicked] = useState(null);
   const [friendIsClicked, setFriendIsClicked] = useState(null);
 
@@ -23,17 +23,21 @@ function Filter() {
     "bug"
   ];
 
-  function handleTypeClick(idx) {
+  function handleTypeClick(el, idx) {
     setTypeIsClicked(idx);
+    filterResources(el);
   }
 
-  function handleFriendClick(idx) {
+  function handleFriendClick(el, idx) {
     setFriendIsClicked(idx);
+    filterSheds(el);
   }
+
 
   function resetFilters() {
     setTypeIsClicked(null);
     setFriendIsClicked(null);
+    resetFilter();
   }
 
   return (
@@ -43,7 +47,7 @@ function Filter() {
         <p className="Filter-title">TYPE</p>
         {tags.map((el, idx) =>
           <div className="Filter-tag">
-            <button type="button" onClick={() => handleTypeClick(idx)}>
+            <button type="button" onClick={() => handleTypeClick(el, idx)}>
               <i className={typeIsClicked === idx ? "bi bi-square-fill" : "bi bi-square"} />
             </button>
             <p>{el}</p>
@@ -53,7 +57,7 @@ function Filter() {
         <p className="Filter-title">FRIENDS</p>
         {friends.map((el, idx) =>
           <div className="Filter-tag">
-            <button type="button" onClick={() => handleFriendClick(idx)}>
+            <button type="button" onClick={() => handleFriendClick(el, idx)}>
               <i className={friendIsClicked === idx ? "bi bi-square-fill" : "bi bi-square"} />
             </button>
             <p>{el}</p>
