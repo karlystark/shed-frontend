@@ -1,0 +1,278 @@
+.LoginForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 15px;
+  padding: 80px;
+  margin: 4% 20%;
+  max-width: 60%;
+  background-color: #1f1f20;
+  color: #f7eadd;
+}
+
+.LoginForm h1 {
+  font-size: 4.5rem;
+  transform: rotate(-3deg);
+}
+
+.LoginForm label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.LoginForm-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  margin-left: 35%;
+  max-width: 60%;
+}
+
+.LoginForm-input label {
+  text-align: left;
+}
+
+.LoginForm-btn {
+  color: rgb(247, 234, 221);
+  border-color: rgb(247, 234, 221);
+  margin: 20px;
+  max-width: 20%;
+  align-self: flex-end;
+}
+
+.LoginForm-btn:hover {
+  background-color: rgb(247, 234, 221);
+  border-color: rgb(247, 234, 221);
+  color: black;
+}
+
+.LoginForm-logo1,
+.LoginForm-logo2,
+.LoginForm-logo3 {
+  max-height: 25%;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  margin-left: 24%;
+}
+
+.LoginForm-logo1 {
+  margin-top: 6%;
+  fill: rgb(249, 64, 3);
+}
+
+.LoginForm-logo2 {
+  margin-top: 18%;
+  fill: rgb(247, 234, 221);
+}
+
+
+/************** RESPONSIVE MEDIA QUERIES *****************/
+
+
+@media (max-width: 280px) {
+
+  .LoginForm-logo1,
+  .LoginForm-logo2 {
+    display: none;
+  }
+
+  .LoginForm h1 {
+    font-size: 1.5rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .LoginForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .LoginForm-input {
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .LoginForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .LoginForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+}
+
+
+@media (min-width: 280px) and (max-width: 320px) {
+  .LoginForm-logo1,
+  .LoginForm-logo2 {
+    display: none;
+  }
+
+  .LoginForm h1 {
+    font-size: 1.5rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .LoginForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .LoginForm-input {
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .LoginForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .LoginForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .LoginForm-logo1,
+  .LoginForm-logo2 {
+    display: none;
+  }
+
+  .LoginForm h1 {
+    font-size: 2rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .LoginForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .LoginForm-input {
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .LoginForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .LoginForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+  .LoginForm-logo1,
+  .LoginForm-logo2 {
+    display: none;
+  }
+
+  .LoginForm h1 {
+    font-size: 2.5rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .LoginForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .LoginForm-input {
+    max-width: 90%;
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .LoginForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .LoginForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .LoginForm-logo1,
+  .LoginForm-logo2 {
+    display: none;
+  }
+
+  .LoginForm h1 {
+    font-size: 3.5rem;
+    transform: rotate(-3deg);
+    margin-top: 40px;
+  }
+
+  .LoginForm form {
+    width: 100%;
+    max-width: 80%;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .LoginForm-input {
+    max-width: 70%;
+    width: 100%;
+    text-align: left;
+    margin-left: 15%;
+  }
+
+  .LoginForm label {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .LoginForm-btn {
+    margin: 20px;
+    align-self: center;
+    max-width: 80%;
+  }
+}

@@ -7,8 +7,9 @@ import ResourceDetail from "./ResourceDetail.js";
 import UserProfile from "./UserProfile.js";
 import NewResourceForm from "./NewResourceForm.js";
 import SignupForm from "./SignupForm.js";
+import LoginForm from "./LoginForm.js";
 
-function RoutesList({resources, handleAddResource, handleAddUser, isLoggedIn}) {
+function RoutesList({resources, handleAddResource, handleAddUser, isLoggedIn, handleLogin}) {
 
   return (
     <Routes>
@@ -19,6 +20,7 @@ function RoutesList({resources, handleAddResource, handleAddUser, isLoggedIn}) {
       <Route path="/resources/:id" element={<ResourceDetail resources={resources}/>} />
       <Route path="/resources/upload" element={<NewResourceForm resources={resources} handleAddResource={handleAddResource}/>} />
       <Route path="/signup" element={<SignupForm handleAddUser={handleAddUser}/>} />
+      <Route path="/login" element={<LoginForm handleLogin={handleLogin}/>} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

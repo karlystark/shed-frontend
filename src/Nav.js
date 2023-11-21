@@ -15,7 +15,8 @@ function Nav() {
           <Link to="/users/karlystark" className="nav-link">my shed</Link>
           <Link to="/resources" className="nav-link">resource list</Link>
           <Link to="/signup" className="nav-link">signup</Link>
-          {/* <Link to="/friends" className="nav-link">friends</Link> */}
+          <Link to="/login" className="nav-link">log in</Link>
+          {/* <Link to="/users" className="nav-link">friends</Link> */}
           <Link to="/logout" className="nav-link">logout</Link>
         </div>
       </div>
