@@ -1,0 +1,14 @@
+.Home-new h1 {
+  font-size: 4rem;
+}
+
+.Home-new p {
+  font-size: 1.2rem;
+}
+
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
