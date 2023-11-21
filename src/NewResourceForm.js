@@ -48,34 +48,37 @@ function NewResourceForm({ resources, handleAddResource }) {
 
         <div className="NewResourceForm-input">
           <label htmlFor="title" className="form-label">Title</label>
-          <input className="NewResourceForm-title form-control"
+          <input className="NewResourceForm-placeholder form-control"
             name="title"
             id="title"
+            placeholder="generator"
             onChange={handleChange} />
         </div>
 
         <div className="NewResourceForm-input">
           <label htmlFor="description" className="form-label">Description</label>
-          <input className="NewResourceForm-description form-control"
+          <input className="NewResourceForm-placeholder form-control"
             name="description"
             id="description"
+            placeholder="champion 3550W weekender portable generator"
             onChange={handleChange} />
         </div>
 
         <div className="NewResourceForm-input">
           <label htmlFor="quantity" className="form-label">Quantity</label>
-          <input className="NewResourceForm-quantity form-control"
+          <input className="NewResourceForm-placeholder form-control"
             name="quantity"
             type="number"
             min="1"
             max="50"
             id="quantity"
+            placeholder="how many do you have?"
             onChange={handleChange} />
         </div >
 
         <div className="NewResourceForm-input">
           <label htmlFor="image">Image</label>
-          <input className="NewResourceForm-image"
+          <input className="NewResourceForm-placeholder"
             type="file"
             accept=".jpg"
             name="image"
@@ -85,9 +88,10 @@ function NewResourceForm({ resources, handleAddResource }) {
 
         <div className="NewResourceForm-input">
           <label htmlFor="alt" className="form-label">Alt-text</label>
-          <input className="NewResourceForm-alt form-control"
+          <input className="NewResourceForm-placeholder form-control"
             name="alt"
             id="alt"
+            placeholder="add alt-text for your image"
             onChange={handleChange} />
         </div>
 
@@ -95,7 +99,7 @@ function NewResourceForm({ resources, handleAddResource }) {
           errorMessages.length !== 0 &&
           <Alert errors={errorMessages} />
         }
-        < button className="NewResourceForm-btn btn btn-outline-dark"> Submit</button>
+        < button className="NewResourceForm-btn btn btn-outline-dark"> Add Resource</button>
       </form >
     </div >
   );
