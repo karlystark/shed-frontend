@@ -46,7 +46,7 @@ function Filter({ filterResources, filterSheds, resetFilter }) {
       <div className="Filter-category">
         <p className="Filter-title">TYPE</p>
         {tags.map((el, idx) =>
-          <div className="Filter-tag">
+          <div key={idx} className="Filter-tag">
             <button type="button" onClick={() => handleTypeClick(el, idx)}>
               <i className={typeIsClicked === idx ? "bi bi-square-fill" : "bi bi-square"} />
             </button>
@@ -56,7 +56,7 @@ function Filter({ filterResources, filterSheds, resetFilter }) {
       <div className="Filter-friends">
         <p className="Filter-title">FRIENDS</p>
         {friends.map((el, idx) =>
-          <div className="Filter-tag">
+          <div key={idx} className="Filter-tag">
             <button type="button" onClick={() => handleFriendClick(el, idx)}>
               <i className={friendIsClicked === idx ? "bi bi-square-fill" : "bi bi-square"} />
             </button>

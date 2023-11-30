@@ -1,12 +1,13 @@
 .Filter {
-  background-color: rgb(255, 252, 250);
+  background-color: var(--white);
   border-radius: 15px;
-  padding: 2rem 4rem 0rem 2rem;
+  padding: 2rem 4rem 2rem 2rem;
   margin: 0 1.5rem;
   max-width: 40%;
-  width: 100%;
   margin-bottom: 15rem;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .Filter-tag {
@@ -16,7 +17,7 @@
 .Filter-tag button {
   text-decoration: none;
   border: none;
-  background-color: rgb(255, 252, 250);
+  background-color: var(--white);
 }
 
 .Filter-tag p {
@@ -49,4 +50,46 @@
   float: right;
   margin-right: -2rem;
   font-weight: 600;
+}
+
+
+@media (max-width: 760px) {
+
+  .Filter {
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: 2rem 2rem 0rem 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .Filter-tag {
+    display: flex;
+  }
+
+  .Filter-head {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .Filter-friends {
+    margin-top: 0rem;
+    margin-left: 2rem;
+  }
+
+  .Filter-title {
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .Filter-reset {
+    max-width: 90%;
+    font-size: .8rem;
+    margin-top: 0rem;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+    font-weight: 600;
+  }
+
 }

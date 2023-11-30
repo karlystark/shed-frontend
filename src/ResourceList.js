@@ -28,17 +28,17 @@ function ResourceList({ resources }) {
   return (
     <div className="ResourceList">
       <div className="ResourceList-banner">
-        <img src="orangesquiggle.png" alt="" />
+        {/* <img src="sun.png" alt="" /> */}
         <h1 className="ResourceList-banner-title"> shared resources </h1>
-        <img src="carrots.png" alt="" />
+        {/* <img src="carrots.png" alt="" /> */}
       </div>
       <div className="ResourceList-body">
         <Filter filterResources={filterResources}
           filterSheds={filterSheds}
           resetFilter={resetFilter} />
         <div className="ResourceList-list">
-          {filteredResources.map(resource =>
-            <ResourceCard resource={resource} />)}
+          {filteredResources.map((resource, idx) =>
+            <ResourceCard key={idx} resource={resource} />)}
         </div>
       </div>
     </div>

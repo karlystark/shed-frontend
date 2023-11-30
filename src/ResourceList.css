@@ -9,16 +9,17 @@
   width: 100%;
   justify-content: center;
   overflow: hidden;
-  background-color: rgb(28, 79, 190);
+  background-color: var(--green);
   margin-bottom: 5rem;
 }
 
 .ResourceList-banner h1 {
   align-self: center;
-  color: rgb(247, 234, 221);
+  color: var(--bg);
   transform: rotate(-3deg);
   font-size: 6rem;
   font-weight: 600;
+  margin: 80px;
 }
 
 .ResourceList-banner img {
@@ -34,3 +35,12 @@
   display: flex;
 }
 
+
+@media (max-width: 760px) {
+
+  .ResourceList-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
