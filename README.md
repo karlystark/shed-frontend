@@ -6,7 +6,7 @@ Shed is a resource-sharing app for chosen families :)
 
 Shed is built using React.js on the frontend and Node.js/Express on the backend. 
 
-https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+![Language](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 
 ## Get Started
