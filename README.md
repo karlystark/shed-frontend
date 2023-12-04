@@ -1,6 +1,8 @@
-# About Shed 
+# Shed
 
 <img width="1374" alt="shedhome" src="https://github.com/karlystark/shed-frontend/assets/110060273/b2212269-2503-4e26-a253-65a43ab1cff0">
+
+## About
 
 Shed is a resource-sharing app for chosen families :) 
 
@@ -19,15 +21,15 @@ To run this project locally, please perform the following steps:
 
 1. Clone the repository
 
-### `git clone https://github.com/karlystark/shed-frontend.git`
+ `git clone https://github.com/karlystark/shed-frontend.git`
 
 2. Install dependencies at the root directory
 
-### `npm install`
+ `npm install`
 
 3. Run your server
 
-### `npm start`
+ `npm start`
 
 4. Open http://localhost:3000 to view Shed in your browser. 
 
